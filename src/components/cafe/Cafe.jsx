@@ -51,7 +51,7 @@ const Cafe = () => {
     let loader = new GLTFLoader();
     let obj = null;
 
-    loader.load("/public/free_isometric_cafe/scene.gltf", function (gltf) {
+    loader.load("./public/free_isometric_cafe/scene.gltf", function (gltf) {
       obj = gltf;
       obj.scene.scale.set(1.3, 1.3, 1.3);
       scene.add(obj.scene);
