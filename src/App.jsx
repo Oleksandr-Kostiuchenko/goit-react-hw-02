@@ -5,6 +5,7 @@ import Description from "./components/description/Description";
 import Options from "./components/options/Options";
 import Feedback from "./components/feedback/Feedback";
 import Notification from "./components/notification/Notification";
+import Cafe from "./components/cafe/Cafe";
 
 function App() {
   const [feedbackData, setFeedbackData] = useState(() => {
@@ -62,7 +63,7 @@ function App() {
         totalFeedback={totalFeedback}
         dataObj={feedbackData}
       />
-
+      <Cafe />
       {totalFeedback > 0 ? (
         <Feedback
           dataObj={feedbackData}
