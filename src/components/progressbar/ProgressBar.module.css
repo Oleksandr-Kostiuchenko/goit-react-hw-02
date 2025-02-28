@@ -11,12 +11,5 @@
   height: 100%;
 
   background-color: #8bb084;
-  /* background: rgb(139, 176, 132);
-  background: linear-gradient(
-    90deg,
-    rgba(139, 176, 132, 1) 0%,
-    rgba(93, 151, 82, 1) 50%,
-    rgba(31, 120, 14, 1) 100%
-  ); */
   transition: width 300ms linear;
 }
