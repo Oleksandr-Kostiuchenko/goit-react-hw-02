@@ -6,6 +6,7 @@ import Options from "./components/options/Options";
 import Feedback from "./components/feedback/Feedback";
 import Notification from "./components/notification/Notification";
 import Cafe from "./components/cafe/Cafe";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [feedbackData, setFeedbackData] = useState(() => {

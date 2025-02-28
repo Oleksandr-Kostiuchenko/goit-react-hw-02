@@ -1,13 +1,20 @@
 import style from "./Feedback.module.css";
 import ProgresBar from "../progressbar/ProgressBar";
 
+import { motion } from "framer-motion";
+
 const Feedback = ({
   dataObj: { good, bad, neutral },
   totalFeedback,
   positiveFeedback,
 }) => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0.7, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 100 }}
+      transition={{ duration: 0.3 }}
+    >
       <ul className={style.optionList}>
         <li className={style.optionItem}>
           <p className={style.feedbackTitle}>Total feedbacks:</p>
@@ -35,7 +42,7 @@ const Feedback = ({
           )}
         </li>
       </ul>
-    </>
+    </motion.div>
   );
 };
 

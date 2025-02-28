@@ -1,4 +1,12 @@
 import style from "./Description.module.css";
+import { motion } from "motion/react";
+import { animate } from "motion";
+import { stagger } from "motion";
+
+animate([
+  // ["div", { opacity: 1 }],
+  ["div", { y: [-100, 0] }, { delay: stagger(0.3) }],
+]);
 
 const Description = () => {
   return (
